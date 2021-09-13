@@ -1,0 +1,196 @@
+1.
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.wood-wheel {
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+2.
+.barrow-wheel {
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.barrow-wheel {
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+3.
+.platform {
+  animation-name: lift-up;
+  animation-duration: 3s;
+}
+
+@keyframes lift-up {
+  from {transform: translateY(0px)}
+  50%  {transform: translateY(-250px)}
+  100% {transform : translateY(-300px)}
+}
+
+4.
+.platform {
+  animation-name: lift-up;
+  animation-duration: 3s;
+}
+
+@keyframes lift-up {
+  0% {
+    transform: translateY(0px);
+  }
+  50%,80% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+
+5.
+@keyframes rotate{
+  50%{
+    transform: rotate(360deg);
+  }
+}
+
+.stone-wheel{
+  animation-name: rotate;
+  animation-duration: 3s;
+}
+
+6.
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move{
+  50%{
+    bottom: 0px;
+  }
+  100%{
+    bottom: -50px;
+  }
+}
+
+.stone-wheel {
+  animation-name: rotate, move;
+  animation-duration: 3s, 6s;
+}
+
+7.
+.ship {
+  animation-name: move-ship;
+  animation-duration: 40s;
+}
+
+.clouds {
+  animation-name: move-clouds;
+  animation-duration: 40s;
+}
+
+.sun-small {
+  animation-name: move-sun;
+  animation-duration: 10s;
+}
+
+.comet {
+  animation-name: move-comet;
+  animation-duration: 5s;
+}
+
+@keyframes move-comet {
+  100% {
+    transform: translate(500px, 400px);
+  }
+}
+
+@keyframes move-clouds{
+  to {transform: translateX(-1000px);}
+}
+
+@keyframes move-sun{
+  to{ transform: translate(350px, -400px);}
+}
+
+@keyframes move-ship{
+  to{transform: translateX(1000px);}
+}
+
+@keyframes move-comet{
+  to{
+     transform: translate(300px, 550px);
+  }
+}
+
+8.
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.arrow{
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+9.
+@keyframes clockwise {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes counterclockwise {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.gear-big{
+    animation-name: clockwise;
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+
+.gear-small{
+  animation-name: counterclockwise;
+  animation-duration: 2s;
+      animation-direction: reverse;
+}
